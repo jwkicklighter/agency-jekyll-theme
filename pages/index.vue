@@ -12,16 +12,16 @@
         </h2>
       </div>
     </section>
-    <albums />
+    <projects />
   </div>
 </template>
 
 <script>
-import Albums from '~/components/Albums.vue'
+import Projects from '~/components/Projects.vue'
 
 export default {
   components: {
-    Albums
+    Projects
   }
 }
 </script>

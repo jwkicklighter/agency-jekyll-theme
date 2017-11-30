@@ -1,10 +1,10 @@
 <template>
-  <div class="album-cover">
-    <div class="album-data">
-      <div class="album-title">
+  <div class="project-cover">
+    <div class="project-data">
+      <div class="project-title">
         {{ title }}
       </div>
-      <div class="album-icon">
+      <div class="project-icon">
         {{ icon }}
       </div>
     </div>
@@ -37,9 +37,9 @@
 <style lang="scss" scoped>
   $white: #EFEFEF;
   $black: #35495e;
-  $album-spacing: 5px;
+  $project-spacing: 5px;
 
-  .album-data {
+  .project-data {
     color: $white;
     position: absolute;
     top: 0;
@@ -59,7 +59,7 @@
     transition-timing-function: ease-in-out;
   }
 
-  .album-title {
+  .project-title {
     font-size: 30px;
     text-align: center;
     transform: translateY(-100%);
@@ -70,7 +70,7 @@
     transition-timing-function: ease-in-out;
   }
 
-  .album-icon {
+  .project-icon {
     font-size: 30px;
     align-self: flex-end;
     position: absolute;
@@ -83,12 +83,12 @@
     transition-timing-function: ease-in-out;
   }
 
-  .album-cover {
+  .project-cover {
     display: block;
     flex: 0 0 auto;
-    // padding: $album-spacing;
+    // padding: $project-spacing;
     position: relative;
-    border: solid $white $album-spacing;
+    border: solid $white $project-spacing;
     margin-bottom: -4px; // Magic number...
 
     img {
@@ -102,17 +102,17 @@
     &:hover {
       cursor: pointer;
 
-      .album-title {
+      .project-title {
         transform: translateX(0);
         opacity: 1;
       }
 
-      .album-icon {
+      .project-icon {
         right: 10px;
         opacity: 1;
       }
 
-      .album-data {
+      .project-data {
         background-color: rgba($black, 0.7);
       }
     }
