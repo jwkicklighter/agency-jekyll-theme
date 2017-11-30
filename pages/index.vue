@@ -1,38 +1,52 @@
 <template>
-  <section class="container">
-    <div>
-      <logo/>
-      <h1 class="title">
-        portfolio
-      </h1>
-      <h2 class="subtitle">
-        Personal portfolio
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
+  <div>
+    <section class="cover">
+      <div>
+        <h1 class="title">
+          J.W. Kicklighter
+        </h1>
+        <h2 class="subtitle">
+          <svg><line x1="0" x2 ="60" y1="0" y2="0" /></svg>
+          <span class="text">Photography</span>
+          <svg><line x1="0" x2 ="60" y1="0" y2="0" /></svg>
+        </h2>
       </div>
-    </div>
-  </section>
+    </section>
+    <albums />
+  </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import Albums from '~/components/Albums.vue'
 
 export default {
   components: {
-    Logo
+    Albums
   }
 }
 </script>
 
-<style>
-.container {
-  min-height: 100vh;
+<style lang="scss">
+$white: #EFEFEF;
+$black: #35495e;
+
+.cover {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background: url('~assets/cover.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%) brightness(80%);
+  height: (100vw/2.44); // Background Image ratio
+  max-height: 100vh;
+}
+
+.title,
+.subtitle {
+  color: $white;
+  text-shadow: 0 0 10px #000;
 }
 
 .title {
@@ -40,19 +54,28 @@ export default {
   display: block;
   font-weight: 300;
   font-size: 100px;
-  color: #35495e;
   letter-spacing: 1px;
 }
 
 .subtitle {
   font-weight: 300;
   font-size: 42px;
-  color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.links {
-  padding-top: 15px;
+  .text {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  svg {
+    stroke: currentColor;
+    stroke-width: 3;
+    height: 3px;
+    width: 60px;
+  }
 }
 </style>
