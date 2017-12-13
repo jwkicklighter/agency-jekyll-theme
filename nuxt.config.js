@@ -15,6 +15,10 @@ module.exports = {
     ]
   },
   /*
+  ** Add any nuxt modules
+  */
+  modules: ['nuxtent'],
+  /*
   ** Customize the progress bar color
   */
   loading: { color: '#35495e' },
