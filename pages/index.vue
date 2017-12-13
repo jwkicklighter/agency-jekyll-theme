@@ -12,7 +12,7 @@
         </h2>
       </div>
     </section>
-    <projects />
+    <projects :projects="posts" />
   </div>
 </template>
 
@@ -20,6 +20,11 @@
 import Projects from '~/components/Projects.vue'
 
 export default {
+  async asyncData ({ app, route }) {
+    return {
+      posts: await app.$content('/').getAll()
+    }
+  },
   components: {
     Projects
   }

@@ -1,15 +1,12 @@
 <template>
   <div class="project-previews">
-    <project-preview thumb="thumb1_square" title="Marching Knights Poster" icon="A" />
-    <project-preview thumb="thumb1_square" title="Marching Knights Poster" icon="A" />
-    <project-preview thumb="thumb1_square" title="Marching Knights Poster" icon="A" />
-    <project-preview thumb="thumb1_square" title="Marching Knights Poster" icon="A" />
-    <project-preview thumb="thumb1_square" title="Marching Knights Poster" icon="A" />
-    <project-preview thumb="thumb1_square" title="Marching Knights Poster" icon="A" />
-    <project-preview thumb="thumb1_square" title="Marching Knights Poster" icon="A" />
-    <project-preview thumb="thumb1_square" title="Marching Knights Poster" icon="A" />
-    <project-preview thumb="thumb1_square" title="Marching Knights Poster" icon="A" />
-    <project-preview thumb="thumb1_square" title="Marching Knights Poster" icon="A" />
+    <project-preview
+      v-for="project in projects"
+      :key="project.name"
+      :thumb="project.thumbnail"
+      :title="project.title"
+      :path="project.permalink"
+      :projectType="project.type" />
   </div>
 </template>
 
@@ -19,6 +16,12 @@
   export default {
     components: {
       ProjectPreview
+    },
+    props: {
+      projects: {
+        type: Array,
+        required: true
+      }
     }
   }
 </script>

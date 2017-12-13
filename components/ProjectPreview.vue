@@ -1,5 +1,5 @@
 <template>
-  <div class="project-cover">
+  <div class="project-cover" @click="onClick">
     <div class="project-data">
       <div class="project-title">
         {{ title }}
@@ -17,13 +17,26 @@
     computed: {
       imagePath () {
         return require('assets/' + this.thumb + '.jpg')
+      },
+      icon () {
+        if (this.projectType === 'graphic') {
+          return 'G'
+        }
+      }
+    },
+    methods: {
+      onClick () {
+        this.$router.push({ path: this.path })
       }
     },
     props: {
       title: {
         type: String
       },
-      icon: {
+      projectType: {
+        type: String
+      },
+      path: {
         type: String
       },
       thumb: {
