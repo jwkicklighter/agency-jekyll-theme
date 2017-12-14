@@ -1,0 +1,70 @@
+[
+  {
+    "title": "Leaf & Meat Logo",
+    "thumbnail": "leaf-and-meat.thumb",
+    "main_graphic": "leaf-and-meat",
+    "type": "graphic",
+    "meta": {
+      "index": 0,
+      "fileName": "leaf-and-meat.md",
+      "section": "/",
+      "dirName": "/"
+    },
+    "date": "2017-12-14",
+    "path": "/project/project/leaf-and-meat",
+    "permalink": "/project/leaf-and-meat",
+    "anchors": [],
+    "body": "<p>Leaf &amp; Meat is a restaurant offering a place for vegans and their non-vegan friends to eat and socialize. I chose to go with an icon logo and a text logo. The icon is a cute cow made up largely of leaves and stems. This should help convey the unity that Leaf &amp; Meat is trying to promote. The background color is green to help draw out the leaves since the cow is likely the first part noticed. The text is a formal typeface, to help promote a sense of quality and refinement. There are leaves added to the text, which should give the logo a bit more of a whimsical feel without making it too “silly.”</p>\n"
+  },
+  {
+    "title": "Marching Knights Video",
+    "thumbnail": "band-video.thumb",
+    "youtube_link": "https://www.youtube.com/embed/0FqF9by6j74",
+    "type": "video",
+    "meta": {
+      "index": 1,
+      "fileName": "band-video.md",
+      "section": "/",
+      "dirName": "/"
+    },
+    "date": "2017-12-14",
+    "path": "/project/project/band-video",
+    "permalink": "/project/band-video",
+    "anchors": [],
+    "body": "<p>The UCF Marching Knights do not have a promo video. For the past several years, I have spent my weekends during football season photographing the Marching Knights during rehearsals and performances. Over the course of the 2017 football season, I had the opportunity to use some gimbal equipment to capture footage to create a real promotional video for the band program. This is the first draft of such a video.</p>\n"
+  },
+  {
+    "title": "Marching Knights Poster",
+    "thumbnail": "band-poster.thumb",
+    "main_graphic": "band-poster",
+    "type": "graphic",
+    "meta": {
+      "index": 2,
+      "fileName": "band-poster.md",
+      "section": "/",
+      "dirName": "/"
+    },
+    "date": "2017-12-14",
+    "path": "/project/project/band-poster",
+    "permalink": "/project/band-poster",
+    "anchors": [],
+    "body": "<p>The Marching Knights are the face of tradition at UCF. This poster is designed to be printed in a large format to distribute around campus and to high schools in the area for recruiting purposes. With a photograph of someone marching, someone playing in warm-ups, and someone playing in the football stands, the design is meant to create a quick impression of what a gameday feels like to the band members.</p>\n"
+  },
+  {
+    "title": "Magazine Layout",
+    "thumbnail": "band-magazine.thumb",
+    "main_graphic": "band-magazine",
+    "type": "graphic",
+    "meta": {
+      "index": 3,
+      "fileName": "band-magazine.md",
+      "section": "/",
+      "dirName": "/"
+    },
+    "date": "2017-12-14",
+    "path": "/project/project/band-magazine",
+    "permalink": "/project/band-magazine",
+    "anchors": [],
+    "body": "<p>Bandmembers Weekly is a fake magazine targeted to musicians. The content is about life as a musician, both during performances/rehearsals and in normal, everyday life. This layout is a 14-page sample created in Adobe InDesign.</p>\n"
+  }
+]

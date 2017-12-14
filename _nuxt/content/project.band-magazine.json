@@ -1,0 +1,17 @@
+{
+  "title": "Magazine Layout",
+  "thumbnail": "band-magazine.thumb",
+  "main_graphic": "band-magazine",
+  "type": "graphic",
+  "meta": {
+    "index": 3,
+    "fileName": "band-magazine.md",
+    "section": "/",
+    "dirName": "/"
+  },
+  "date": "2017-12-14",
+  "path": "/project/project/band-magazine",
+  "permalink": "/project/band-magazine",
+  "anchors": [],
+  "body": "<p>Bandmembers Weekly is a fake magazine targeted to musicians. The content is about life as a musician, both during performances/rehearsals and in normal, everyday life. This layout is a 14-page sample created in Adobe InDesign.</p>\n"
+}
