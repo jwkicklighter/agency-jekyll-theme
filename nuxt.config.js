@@ -14,6 +14,9 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  css: ['~/assets/common.scss'],
+  script: [
+  ],
   /*
   ** Add any nuxt modules
   */
@@ -26,6 +29,10 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    vendor: [
+      'waypoints/lib/noframework.waypoints.js',
+      'waypoints/lib/shortcuts/inview.js'
+    ],
     /*
     ** Run ESLint on save
     */

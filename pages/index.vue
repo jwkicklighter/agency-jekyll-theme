@@ -1,5 +1,6 @@
 <template>
   <div>
+    <portfolio-nav :transparent="transparentNavbar" />
     <section class="cover">
       <div>
         <h1 class="title">
@@ -12,12 +13,17 @@
         </h2>
       </div>
     </section>
-    <projects :projects="posts" />
+    <div class="below-cover">
+      <projects :projects="posts" />
+      <portfolio-footer />
+    </div>
   </div>
 </template>
 
 <script>
 import Projects from '~/components/Projects.vue'
+import PortfolioFooter from '~/components/PortfolioFooter.vue'
+import PortfolioNav from '~/components/PortfolioNav.vue'
 
 export default {
   async asyncData ({ app, route }) {
@@ -25,8 +31,37 @@ export default {
       posts: await app.$content('/').getAll()
     }
   },
+  data () {
+    return {
+      transparentNavbar: true
+    }
+  },
   components: {
-    Projects
+    Projects,
+    PortfolioFooter,
+    PortfolioNav
+  },
+  methods: {
+    initInView: function () {
+      const wrapper = document.querySelector('.cover')
+
+      // eslint-disable-next-line no-undef, no-new
+      new Waypoint.Inview({
+        element: wrapper,
+        enter: direction => {
+          console.log('enter')
+          this.transparentNavbar = true
+        },
+        exited: () => {
+          console.log('exited')
+          this.transparentNavbar = false
+        }
+      })
+    }
+  },
+  layout: 'index',
+  mounted () {
+    this.initInView()
   }
 }
 </script>

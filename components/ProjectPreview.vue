@@ -21,6 +21,8 @@
       icon () {
         if (this.projectType === 'graphic') {
           return 'G'
+        } else if (this.projectType === 'video') {
+          return 'V'
         }
       }
     },
@@ -77,6 +79,7 @@
     text-align: center;
     transform: translateY(-100%);
     opacity: 0;
+    width: 100%;
 
     transition-duration: .2s;
     transition-property: transform opacity;

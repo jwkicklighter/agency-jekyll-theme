@@ -19,7 +19,8 @@
     "nuxt": "^1.0.0-rc11",
     "nuxtent": "^1.1.0",
     "push-dir": "^0.4.1",
-    "sass-loader": "^6.0.6"
+    "sass-loader": "^6.0.6",
+    "waypoints": "^4.0.1"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",

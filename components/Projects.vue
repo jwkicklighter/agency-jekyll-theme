@@ -36,6 +36,7 @@ $album-spacing: 5px;
   padding: $album-spacing;
   display: flex;
   flex-direction: row;
+  flex-grow: 1;
   flex-wrap: wrap;
 }
 </style>
